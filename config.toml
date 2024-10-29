@@ -1,0 +1,15 @@
+theme = "ayu_dark"
+
+[keys.normal]
+C-s = ":w"
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+
+[keys.insert]
+C-c = "normal_mode"
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+center = ["version-control"]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
